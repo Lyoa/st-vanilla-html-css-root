@@ -7,103 +7,159 @@
         <meta name="description" content="Portfolio: A mini project in HTML and CSS StackEd Lesson">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     </head>
         <body>
 <!-- -------------navbar--------------- -->
             <div class="navbar">
-                <header>
-                    <div class="access">
-                        <h3>.lyoa</h3>
-                    </div>
-                    <nav>
-                    <div class="hamb">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                        <ul class="nav-tags">       
-                            <h5><a href="#a">About</a>
-                            <a href="#s">Skills</a>
-                            <a href="#w">Works</a>
-                            <a href="#c">Contact Me</a>
-                            <a href="https://bit.ly/3kWdJev">Resume</a></h5>
-                        </ul>
-                    </nav>
-                </header>
+                <nav>
+                    <h2 class="logo">.lyoa</h2>
+                    <ul>      
+                        <li><a href="#a">About</a></li>
+                        <li><a href="#s">Skills</a></li>
+                        <li><a href="#w">Works</a></li>
+                        <li><a href="#serv">Services</a></li>
+                        <li><a href="#c">Contact Me</a></li>
+                    </ul>
+                    <p style="text-align: right;">
+                    <a class="button" href="https://bit.ly/3kWdJev">Resume</a>
+                    </p>
+                </nav>
             </div>
             <div class="sections">
 <!-- -------------splash--------------- -->
                 <div class="splash">
-                    <div>Hi, my name is<br>
-                    Shaira de Leon.<br>
-                    Building end-to-end solutions,<br>
-                    one line of code at a time</div>
-                    <p>Currently, I'm focused on developing my skills 
-                        as a Full-stack Developer in <a href="https://stacktrek.com/">StackTrek</a>
-                        and provide excellent service in building user-facing website in the future.</p>
-                </div>
-                <div>
-                    <a href="#serv">Check out my services!</a>
+                    <h4>Hi, my name is</h4>
+                    <h1>Shaira de Leon.</h1>
+                    <h2>Building end-to-end solutions,<br>
+                    one line of code at a time</h2>
+                    <h3>Currently, I'm focused on developing my skills as a<br>
+                        Full-stack Developer in <a href="https://stacktrek.com/">StackTrek</a> to provide excellent<br>
+                        service in building user-facing website in the future.</h3><br><br><br>
+
+                        <p style="text-align: left;">
+                            <a class="button" href="mailto:sczaydeleon@gmail.com">Say Hello!</a>
+                        </p>
                 </div>
 <!-- -------------about-me--------------- -->               
-                <div id="a" class="about-me"></div>
-                    <p>About Me</p>
-                        <div>Hello! I'm Shay and I love creatives since Primary days. Sketching, painting, mixed-media, theatre, murals and
-                        many more are the things where I really find my passion.
-                        I'm an Architectural Planner/CAD Technician for 4 years in Construction Industry and decided to also hop on Tech starting this year,
-                        initially, to attain a worthy compensation in this career but then I took interest in showcasing arts on internet and also blogging -- turns out 
-                        wanting to have a pleasing and resolute website taught me a lot about HTML & CSS.<br><br>
-                        Today, I have the privilege to dive deep in different programming languages and tools via a <a href="https://stacktrek.com/">full-stack bootcamp</a>
-                        to be able to build accessible, inclusive products and digital experiences for a variety of clients in the future.</div>
+                <div id="a" class="about">
+                    <div class="main">
+                        <img src="img/about.png">
+                        <div class="about-text">
+                        <h2>About Me</h2>
+                        <h5>Full-Stack Developer</h5>
+                            <p>Hello! I'm Shay and I love creatives since Primary days. Sketching, painting, mixed-media, theatre, murals and
+                            many more are the things where I really find my passion.<br>
+                            I'm an Architectural Planner/CAD Technician for 4 years in Construction Industry and decided to also hop on Tech this year,
+                            initially, to attain a worthy compensation in this career but then I took interest in showcasing arts on internet and also blogging -- turns out 
+                            wanting to have a pleasing and resolute website taught me a lot about HTML & CSS.<br><br>
+                            Today, I have the privilege to dive deep in different programming languages and tools via bootcamp
+                            to be able to build accessible, inclusive products and digital experiences for a variety of clients in the future.</p>
+                        </div>
+                    </div>
                 </div>
 <!-- -------------skills--------------- -->
                 <div id="s" class="skills">
-                    <p>Here are a few technologies I've been working with recently:</p>
-                    <p>Programming Languages</p>
-                    <a title="Python" href="https://www.python.org/community/logos/"><img src="/icons/python.png" width="50" height="50"></a>
-                    <a title="HTML 5" href="https://html.com/"><img src="/icons/html.png" width="50" height="50"></a>
-                    <a title="CSS 3" href="https://html.com/css/"><img src="/icons/css.png" width="50" height="50"></a>                  
-                    <p>Design</p>
-                    <a title="AutoCAD" href="https://www.autodesk.com/"><img src="/icons/cad.png" width="50" height="50"></a>
-                    <a title="Sketchup" href="https://www.sketchup.com/"><img src="/icons/skp.png" width="50" height="50"></a>
-                    <a title="VRay" href="https://www.chaos.com/vray/sketchup"><img src="/icons/vray.png" width="50" height="50"></a>
-                    <a title="Lumion" href="https://lumion.com/"><img src="/icons/lumion.png" width="50" height="50"></a>
-                    <a title="Revit" href="https://www.autodesk.com/"><img src="/icons/revit.png" width="50" height="50"></a>
-                    <p>Tools & Platforms</p>
-                    <a title="Git" href=""><img src="/icons/git.png" width="50" height="50"></a>
-                    <a title="WordPress" href=""><img src="/icons/wordpress.png" width="50" height="50"></a>
+                    <div class="tag">
+                        <h2>Skills</h2>
+                        <h3>Here are the few technologies I've been working with recently</h3>
+                     </div>   
+                        <div class="icon">
+                            <h4>Programming Languages</h4>
+                                <div class="pad">
+                                <a title="Python" href="https://www.python.org/community/logos/"><img src="/icons/python.png" width="100" height="100"></a>
+                                <a title="HTML 5" href="https://html.com/"><img src="/icons/html.png" width="100" height="100"></a>
+                                <a title="CSS 3" href="https://html.com/css/"><img src="/icons/css.png" width="100" height="100"></a>                  
+                            </div>
+                        </div>
+
+                        <div class="icon">
+                            <h4>Design</h4>
+                            <div class="pad">
+                                <a title="AutoCAD" href="https://www.autodesk.com/"><img src="/icons/cad.png" width="130" height="80"></a>
+                                <a title="Sketchup" href="https://www.sketchup.com/"><img src="/icons/skp.png" width="150" height="80"></a>
+                                <a title="VRay" href="https://www.chaos.com/vray/sketchup"><img src="/icons/vray.png" width="100" height="100"></a>
+                                <a title="Lumion" href="https://lumion.com/"><img src="/icons/lumion.png" width="130" height="80"></a>
+                                <a title="Revit" href="https://www.autodesk.com/"><img src="/icons/revit.png" width="130" height="100"></a>
+                            </div>
+                        </div>
+                            
+                        <div class="icon">
+                            <h4>Tools & Platforms</h4> 
+                            <div class="pad"> 
+                                <a title="Git" href=""><img src="/icons/git.png" width="100" height="100"></a>
+                                <a title="WordPress" href=""><img src="/icons/wordpress.png" width="100" height="100"></a>
+                            </div>
+                        </div>    
+                    </div>
                 </div>
 <!-- -------------works--------------- -->
                 <div id="w" class="works">
-                    <p>Some Things I Built at StackEd Projects</p>
-                    <p>Python Games & Portfolio</p>
-                    <a title="Hangman Game" href=""><img src="img/hangman.png" width="200" height="200"></a>
-                    <a title="Quiz Game: Whack-O Brain" href=""><img src="img/quiz.png" width="200" height="200"></a>
-                    <a title="Adventure Game: Midnight Escape" href=""><img src="img/adventure.png" width="200" height="200"></a>
-                    <a title="Vanilla HTML & CSS Portfolio" href=""><img src="img/bio.jpg" width="200" height="200"></a>
+                    <div class="name">
+                        <h2>My Works</h2>
+                        <h5>Python Games <span>& Portfolio</span></h5>
+                            <a title="Hangman Game" href=""><img src="img/hangman.png" width="200" height="200"></a>
+                            <a title="Quiz Game: Whack-O Brain" href=""><img src="img/quiz.png" width="200" height="200"></a>
+                            <a title="Adventure Game: Midnight Escape" href=""><img src="img/adventure.png" width="200" height="200"></a>
+                            <a title="Vanilla HTML & CSS Portfolio" href=""><img src="img/bio.jpg" width="200" height="200"></a>
+                    </div>
                 </div>
 <!-- -------------services--------------- -->
                 <div id="serv" class="services">
-                    <p>My Services</p>
-                        <div>BACK-END DEVELOPMENT<br>
-                            <h5>To ensure that your website performs correctly by focusing on
-                                databases, back-end logic, application programming interface (APIs),
-                                website architecture and servers.</h5>
+                    <div class="title">
+                        <h2>My Services</h2>
                         </div>
-                        <div>FRONT-END DEVELOPMENT<br>
-                            <h5>To ensure that everything you sees and interacts with on the screen
-                                is understandable, intuitive, and responsive. Also, to secure all data 
-                                to come up correctly in different browsers, OS, and on all devices.</h5>
+
+                        <div class="box">
+                            <div class="card">
+                                <i class="fa-solid fa-code"></i><br>
+                                <h5>BACK-END DEVELOPMENT</h5>
+                                <div class="bed">
+                                    <p>To ensure that your website performs correctly by focusing on
+                                    databases, back-end logic, APIs,
+                                    website architecture and servers.</p>
+
+                                    <p style="text-align: center;">
+                                        <a class="button" href="#">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <i class="fa-solid fa-code"></i><br>
+                                <h5>FRONT-END DEVELOPMENT</h5>
+                                <div class="bed">
+                                    <p>To ensure that everything you sees and interacts with on the screen
+                                    is understandable, intuitive, and responsive.</p>
+        
+                                    <p style="text-align: center;">
+                                        <a class="button" href="#">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <i class="fa-solid fa-code"></i><br>
+                                <h5>WEB DESIGN</h5>
+                                <div class="bed">
+                                    <p>To provide customized website design that is perfect
+                                    for your business or personal site. To create a website 
+                                    that matches your brand to give you and your clients a seamless user experience.</p>
+                
+                                    <p style="text-align: center;">
+                                        <a class="button" href="#">Read More</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div>WEB DESIGN<br>
-                            <h5>To provide customized website design that is perfect
-                            for your business or personal site. We will work together to
-                            create a website that matches your brand to give you and your
-                            clients a seamless user experience.</h5>
-                        </div>
-                </div>
+                                
 <!-- -------------contact--------------- -->
-                <div id="c" class="contact">
+                <!-- <div id="c" class="contact">
+                    <div class="pint">
                     <p>What's Next?</p>
                     <p>Get In Touch</p>
                     <div>Although I'm a bit tied up with the <a href="https://stacktrek.com/">bootcamp</a>
@@ -115,12 +171,12 @@
                     <a title="Twitter: @hey_elpeeda" href="https://twitter.com/hey_elpeeda"><img src="/icons/twitter.png" width="20" height="20"></a>
                     <a title="LinkedIn: @heyelpeeda" href="https://www.linkedin.com/in/heyelpeeda/"><img src="/icons/linkedin.png" width="20" height="20"></a>
                     <a title="Discord: @Elpeeda1760" href="https://www.discordapp.com/users/900060108598411265"><img src="/icons/discord.png" width="20" height="20"></a>
-                </div>
-            </div>
+                    </div>
+                </div> -->
 <!-- -------------footer--------------- -->
-            <div class="footer">
-                <div>Design & Built by Shaira de Leon</div>
+            <!-- <div class="footer">
+                <h2 class="logo">.lyoa</h2>
+                <p>Design & Built by Shaira de Leon</p>
             </div>
-            <script src="" async defer></script>
         </body>
-</html> 
+</html>  -->
