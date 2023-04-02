@@ -1,10 +1,11 @@
-/* @media only screen and (min-width: 600px) {
-    span {
-        font-size: 20px;
+@media(max-width: 828px) {
+    body {
+        font-size: px;
     }
+
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
    span {
     font-size: 20px;
    } 
@@ -22,9 +23,8 @@
     width: 100%;
     background-image: url(../img/bg4.png);
     background-size: cover;
-    background-position: center;
+    background-position: center;   
 }
-
 .navbar .button {
     background-color: #9db5cc;
     color: white;
@@ -42,43 +42,38 @@
     cursor: pointer;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-left: 17%;
-    padding-right: 8%
-}
-
-.logo {
+.navbar .logo {
     color: #9db5cc;
     padding-top: 40px;
-    padding-left: 0;
-
+    margin-left: 2%;
 }
 
-nav ul li {
+#nav {
     list-style-type: none;
-    display: inline-block;
-    padding: 10px 50px;
 }
 
-nav ul li a {
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-transform: capitalize;
+    display: inline-block;
 }
 
-nav ul li a:hover {
+#nav ul li a:hover {
     color: #9db5cc;
 }
 
 .splash {
     position: absolute;
     top: 32%;
-    left:12%;   
+    left:12%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .splash .button {
@@ -127,12 +122,15 @@ a {
     color:#9db5cc;
     font-size: 25px;
 }
-
+/* about */
 .about {
     height: 100vh;
     width: 100%;
     padding: 100px 0px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .about img {
@@ -175,12 +173,15 @@ a {
     font-size: 18px;
     margin-bottom: 45px;
 }
-
+/* skills */
 .skills {
-    background: #101010;
     height: 100vh;
     width: 100%;
-    padding-top: 50px;
+    padding: 100px 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .tag h2 {
@@ -206,7 +207,7 @@ a {
     width: 1200px;
     background: #191919;
     border-radius: 0px;
-    margin: 15px;
+    margin-left: 350px;
     position:relative;
     text-align: center;
 }
@@ -216,7 +217,7 @@ a {
     color: #9db5cc;
     font-size: 40px;
     font-family: 'Josephine Sans', sans-serif;
-    width: 1500px;
+    width: 1200px;
     margin: 20px auto;
     text-align: center;
 }
@@ -225,19 +226,26 @@ a {
     justify-content: center;
     
 }
-
+/* works */
 .works {
     height: 100vh;
     width: 100%;
     padding: 100px 0px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
+/* services */
 .services {
-    background: #101010;
     height: 100vh;
     width: 100%;
-    padding-top: 10%;
+    padding: 100px 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .title h2 {
@@ -304,16 +312,20 @@ h5 {
     border: 2px solid #9db5cc;
     cursor: pointer;
 }
-
+/* contact */
 .contact {
-    height: 50vh;
+    height: 100vh;
     width: 100%;
     padding: 100px 0px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
-.footer {
+footer {
     height: 20vh;
     width: 100%;
     background-color: #2d3e51;
 }
+
